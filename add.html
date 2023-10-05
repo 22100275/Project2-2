@@ -17,11 +17,11 @@
             <div class="mb-3">
                 <label for="imageURL" class="form-label">도서명:</label>
                 <input type="text" id="imageURL" class="form-control">
+                <span id="animeNameError" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label for="animeName" class="form-label">저자:</label>
                 <input type="text" id="animeName" class="form-control">
-                <span id="animeNameError" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label class="form-label">장르:</label><br>
@@ -66,7 +66,7 @@
 
             const animeNameError = document.getElementById("animeNameError");
             if (!animeName) {
-                animeNameError.textContent = "애니메이션 이름을 입력하세요.";
+                animeNameError.textContent = "도서명을 입력하세요.";
                 return;
             } else {
                 animeNameError.textContent = "";
